@@ -15,6 +15,12 @@ import { TabularComponent } from './Customer/tabular/tabular.component';
 import { GraphicalComponent } from './Customer/graphical/graphical.component';
 import {MatCardModule} from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+//
+
+//Charts
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 //
 
 @NgModule({
@@ -35,8 +41,12 @@ import { MatTableModule } from '@angular/material/table';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
     //
+    NgxChartsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
